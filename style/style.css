@@ -8,6 +8,9 @@ body {
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
 }
+.text {
+  color: black;
+}
 
 .navbar {
   max-width: 1200px;
@@ -58,7 +61,6 @@ body {
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 .banner-content h1 {
   font-size: 45px;
@@ -173,7 +175,7 @@ body {
   color: #333;
 }
 .join-section {
-  background-image: url("/assets/news-letter-bg.png");
+  background-image: url("../assets/news-letter-bg.png");
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
@@ -221,8 +223,47 @@ body {
   background-color: #ffffff;
   color: black;
 }
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-des {
+  font-size: 20px;
+  color: gray;
+}
+.service-link li {
+  list-style: none;
+  padding: 10px;
+}
+.service-link a {
+  text-decoration: none;
+  color: gray;
+}
+.service-link a:hover {
+  color: #e95a08;
+}
+.service-ques li {
+  list-style: none;
+  padding: 10px;
+}
+.service-ques li a {
+  text-decoration: none;
+  color: gray;
+}
+.service-ques li a:hover {
+  color: #e95a08;
+}
+.forth {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 98px;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   .nav-links a:not(.cart) {
     display: none;
   }
@@ -244,10 +285,12 @@ body {
   }
   .plants-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
   }
   .plants-lover-section {
     flex-direction: column;
     text-align: left;
+    padding: 56px 59px;
   }
   .plant-lover-image {
     order: -1;
@@ -260,17 +303,12 @@ body {
     font-size: 28px;
     margin-bottom: 20px;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .join-overlay h2 {
-    font-size: 1.5rem;
-  }
-  .join-form {
+  .footer {
     flex-direction: column;
-  }
-  .join-form input,
-  .join-form button {
-    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-right: 120px;
   }
 }
