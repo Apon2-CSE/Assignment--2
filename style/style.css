@@ -8,6 +8,10 @@ body {
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
 }
+main{
+  width: 100%;
+  max-width: 100%;
+}
 .text {
   color: black;
 }
@@ -77,6 +81,31 @@ body {
 .banner-image {
   max-width: 100%;
   height: auto;
+}
+.plant-lover-image {
+  position: relative;
+  display: inline-block;
+}
+.img1 {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+.img3 {
+  position: absolute;
+  top: -200px;
+  right: -50px;
+  width: 250px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.img2{
+  ma
 }
 .plants-section {
   max-width: 1200px;
@@ -267,6 +296,11 @@ body {
   .nav-links a:not(.cart) {
     display: none;
   }
+  .h-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
   .cart-span {
     display: inline;
     font-size: 14px;
@@ -310,5 +344,8 @@ body {
     flex-wrap: wrap;
     align-content: space-between;
     margin-right: 120px;
+  }
+  .img3{
+    display: none;
   }
 }
