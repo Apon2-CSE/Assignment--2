@@ -455,7 +455,7 @@ main {
     align-items: center;
   }
   .left-cards {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   }
