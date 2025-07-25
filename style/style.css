@@ -148,6 +148,7 @@ main {
 }
 .plant-card button {
   width: 90%;
+  font-size: 16px;
   padding: 8px 16px;
   background-color: #e95a08;
   color: white;
@@ -156,6 +157,10 @@ main {
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s ease;
+}
+.plant-card button:hover {
+  background-color: aliceblue;
+  color: #111111;
 }
 .plants-lover-section {
   max-width: 1200px;
@@ -243,7 +248,8 @@ main {
   padding: 20px;
 }
 .deal-card {
-  filter: brightness(60%);
+  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
 }
 .deal-info {
   text-align: center;
@@ -269,9 +275,23 @@ main {
 .large {
   flex: 2;
   min-height: 78px;
-  color: white;
+
   justify-content: center;
   align-items: center;
+}
+#img2 {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .center {
   text-align: center;
@@ -423,7 +443,7 @@ main {
     order: -1;
     text-align: center;
     margin-right: 25px;
-    width: 350px;
+    width: 323px;
     height: 700px;
   }
   .plants-lover-content {
